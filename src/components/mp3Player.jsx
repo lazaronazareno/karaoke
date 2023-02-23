@@ -116,8 +116,8 @@ function AudioPlayer() {
                 {currentTranscript.transcription.split(/(?=[A-Z])/).map((item, index) => (
                   <h4 className='active' key={item + index}>{item}</h4>
                 ))}
-                {transcription[currentTranscriptIndex + 1] && (
-                  transcription[currentTranscriptIndex + 1].transcription.split(/(?=[A-Z])/).map((item, index) => (
+                {transcription[currentTranscriptIndex] && (
+                  transcription[currentTranscriptIndex].transcription.split(/(?=[A-Z])/).map((item, index) => (
                     <h5 className='inactive' key={item + index}>{item}</h5>
                   ))
                 )}
